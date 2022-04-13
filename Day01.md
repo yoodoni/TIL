@@ -47,3 +47,51 @@
 9. 원본 소스 보기 : command + /
 10. 구분선 : ---
 
+
+
+## 4. Git 기초
+
+1. 초기설정
+   1. git config --global user.name "유저명"
+   2. git config --global user.email "깃허브 이메일"
+
+2. 설정 확인
+   git config --global --list
+
+3. 폴더를 저장소(repository)로 만들기 -> 최초 1회만 실행
+   git init
+
+4. 파일 만들기
+   touch 파일명.확장자
+
+5. 수정 후 파일 저장
+   command + s
+
+6. 무대 위로 올리기 (Staging Area)
+   git add 파일명.확장자 / git add .
+
+7. 파일 상태 파악
+   git status
+
+8. 파일 변경사항 기록 (Commits)
+   git commit -m "커밋 메시지"
+
+9. 변경사항 내역 확인
+   git log / git log --oneline
+
+
+
+## 5. Github 
+
+1. Visual-Studio-Code 에서 연결
+   git remote add origin (github url)
+
+2. 연결 확인
+   git remote -v
+
+3. 오타가 난 경우
+   git remote rm origin
+
+4. Github에 변경사항 백업하기
+   git push origin master
+
